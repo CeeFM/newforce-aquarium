@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin: 0;
+    text-align: center;
+}
+
+.fish-and-tips {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fish-container {
+    flex-direction: row;
+
+}
+
+div[id$="__name"] {
+    font-weight: bold;
+}
+
+div[id$="__length"],
+div[id$="__location"],
+div[id$="__diet"] {
+    font-style: italic;
+}
+
+.fish {
+    background-color: rgb(216, 216, 216);
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    margin: .5em .25rem;
+}
+
+aside {
+    background-color: rgb(172, 172, 172);
+    width: 300px;
+    text-align: center;
+    border-radius: 35px;
+    margin-left: .25rem;
+}
+
+aside p {
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+aside ul {
+    text-align: left;
+}
+
+blockquote {
+    background-color: rgb(241, 239, 239);
+    font-style: italic;
+    height: 150px;
+    padding: 30px 30px 0 30px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+blockquote span {
+    font-weight: bold;
+}
+
+.locations {
+    text-align: center;
+    background-color: rgb(225, 222, 222);
+    border-radius: 25px;
+    border: 1px dotted red;
+    padding: .75rem;
+    margin: 0 40px;
+}
+
+.locations ul {
+    text-align: center;
+    list-style-position: inside;
+}
