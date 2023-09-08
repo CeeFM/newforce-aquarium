@@ -7,31 +7,26 @@ h2 {
     text-align: center;
 }
 
-#fish-container {
+.fish-and-tips {
     display: flex;
-    flex-flow: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.fishList {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-evenly;
+.fish-container {
+    flex-direction: row;
+
 }
 
-div[class$="__name"] {
+div[id$="__name"] {
     font-weight: bold;
 }
 
-div[class$="__length"],
-div[class$="__location"],
-div[class$="__diet"] {
+div[id$="__length"],
+div[id$="__location"],
+div[id$="__diet"] {
     font-style: italic;
 }
-
-div[class$="__length"]:after {
-    content: " inches";
-}
-
 
 .fish {
     background-color: rgb(216, 216, 216);
@@ -41,12 +36,10 @@ div[class$="__length"]:after {
     text-align: center;
     padding-bottom: 20px;
     margin: .5em .25rem;
-    transition: all .2s ease-in-out
 }
 
 .fish:hover {
-    transform: scale(1.1);
-    border: 1px dotted black
+    border: 1px solid black;
 }
 
 .fish img {
@@ -65,7 +58,6 @@ aside {
     text-align: center;
     border-radius: 35px;
     margin-left: .25rem;
-    position: relative;
 }
 
 aside p {
